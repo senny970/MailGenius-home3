@@ -1,8 +1,8 @@
-* {
+/* * {
     outline: 1px solid black;
-}
+} */
 
-* *::before, *::after {
+* {
 	box-sizing: border-box;
 }
 
@@ -29,6 +29,29 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+button {
+	border: none;
+	background: transparent;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+}
+
+.btn {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.33;
+	padding: 16px 30px;
+}
+
+.btn-default {
+	background: linear-gradient(90deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+	box-shadow: 0px 4px 20px rgba(32, 228, 179, 0.85);
+	border-radius: 30px;
+	color: #fff;
+}
+
 .d-flex {
 	display: flex;
 }
@@ -39,7 +62,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header {
     position: absolute;
-    padding-top: 40px;	
+    padding-top: 40px;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -69,4 +92,53 @@ p, h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	color: #fff;
 	margin-left: auto;
+}
+
+.inner {
+    padding-top: 95px;
+    height: 100vh;
+    background: linear-gradient(270deg, #00C6FF 0%, #0072FF 101.47%);
+}
+
+.inner .container {
+    padding-top: 95px;
+}
+
+.call-to-action-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+    color: #fff;
+    width: 542px;
+}
+
+.call-to-action-desq {
+    margin-top: 20px;
+    width: 383px;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.call-to-action-desq > span {
+    font-weight: 700;
+    color: #fff;
+}
+
+.email-not-required {
+    margin-top: 15px;
+}
+
+.email-not-required > span {
+	line-height: 1.71;
+	color: rgba(255, 255, 255, 0.8);
+	margin-left: 15px;
+}
+
+.btn-test-email-container {
+    margin-top: 45px;
+    width: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
