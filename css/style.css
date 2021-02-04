@@ -103,6 +103,11 @@ button {
     padding-top: 95px;
     /* height: 100vh; */
     /* background: linear-gradient(270deg, #00C6FF 0%, #0072FF 101.47%); */
+    background-image: url('/img/ellipse1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 745px;    
 }
 
 .inner .container {
@@ -227,4 +232,5 @@ button {
 
 .providers-collection {
     margin-bottom: 100px;
+    justify-content: space-between;
 }
