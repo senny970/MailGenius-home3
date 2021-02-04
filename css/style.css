@@ -96,7 +96,7 @@ button {
 
 .inner {
     padding-top: 95px;
-    height: 100vh;
+    /* height: 100vh; */
     background: linear-gradient(270deg, #00C6FF 0%, #0072FF 101.47%);
 }
 
@@ -141,4 +141,71 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer {
+    margin-top: 270px;
+}
+
+.providers-title {
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #27DEBF;
+}
+
+.spam-checker-title {
+    margin-top: 25px;
+    width: 490px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #29375A;
+    margin-bottom: 30px;
+}
+
+.provider-item {
+    width: 164px;
+    height: 164px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.provider-item:hover {
+    box-shadow: 0px 2px 15px rgba(2, 71, 149, 0.5);
+    border-radius: 4px;
+}
+
+.gmail_ico {
+    width: 90px;
+    height: 50px;
+}
+
+.salesforce_ico {
+    width: 86px;
+    height: 60px;
+}
+
+.hubspot_ico {
+    width: 120px;
+    height: 35px;
+}
+
+.mailchimp_ico {
+    width: 164px;
+    height: 80px;
+}
+
+.sendgrid_ico {
+    width: 130px;
+    height: 25px;
+}
+
+.outlook_ico {
+    width: 60px;
+    height: 60;
+}
+
+.providers-collection {
+    margin-bottom: 100px;
 }
