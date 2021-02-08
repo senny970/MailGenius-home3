@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid black;
-} */
+}
 
 * {
 	box-sizing: border-box;
@@ -76,7 +76,7 @@ button {
 .container {
 	max-width: 1084px;
 	padding: 0;
-	margin: auto;
+    margin: auto;
 }
 
 .main-header-nav {
@@ -107,7 +107,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    padding-bottom: 745px;    
+    padding-bottom: 745px;
 }
 
 .inner .container {
