@@ -1,6 +1,6 @@
-/* * {
+*, *::after, *::before {
     outline: 1px solid black;
-} */
+}
 
 * {
 	box-sizing: border-box;
@@ -232,4 +232,58 @@ button {
     background-size: 925px 100%;
     background-repeat: no-repeat;
     background-position: top right;
+}
+
+/* Tablet Query */
+@media (max-width: 1086px) {
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .call-to-action-title::after {
+        background-size: contain;
+        width: 511px;
+        height: 450px;
+        top: 28px;
+        bottom: 0;
+        right: 0;
+        left: 474px;
+    }
+
+    .providers-collection {
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablet Query */
+@media (max-width: 1036px) {
+    .call-to-action-title::after {
+        background-size: contain;
+        width: 411px;
+        height: 350px;
+        top: 100px;
+        bottom: 0;
+        right: 0;
+        left: 474px;
+    }
+}
+
+/* Tablet Query */
+@media (max-width: 935px) {
+    .call-to-action-title::after {
+        display: none;
+    }
+}
+
+@media (max-width: 935px) {
+    .container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .provider-item {
+        width: 224px;
+        height: 224px;
+    }
 }
