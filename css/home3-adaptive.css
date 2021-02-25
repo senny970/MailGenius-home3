@@ -1,0 +1,235 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font: 400 14px/1 "PT Sans", sans-serif;	    
+    margin: 0;
+}
+
+.bg-image-top {
+    position: absolute; 
+    z-index: -1;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+button {
+	border: none;
+	background: transparent;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+    outline: none;
+}
+
+.btn {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.33;
+	padding: 16px 30px;
+}
+
+.btn-default {
+	background: linear-gradient(90deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+	box-shadow: 0px 4px 20px rgba(32, 228, 179, 0.85);
+	border-radius: 30px;
+	color: #fff;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.header {
+    position: absolute;
+    padding-top: 40px;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.container {
+	max-width: 1084px;
+	padding: 0;
+    margin: auto;
+}
+
+.main-header-nav {
+	color: #fff;
+}
+
+.main-header-nav {
+	font-weight: 700;
+	margin-left: 66px;
+}
+
+.main-header-nav a + a,
+.info-header-nav a + a {
+	margin-left: 30px;
+}
+
+.info-header-nav {
+	font-weight: 400;
+	color: #fff;
+	margin-left: auto;
+}
+
+.inner {
+    padding-top: 95px;
+    background-image: url('/img/ellipse1.svg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 120px;
+}
+
+.inner .container {
+    padding-top: 95px;
+}
+
+.call-to-action-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+    color: #fff;
+    width: 542px;
+    position: relative;
+}
+
+.call-to-action-title::after {
+    content: '';
+    position: absolute;
+    background: url('/img/mailbox.svg') no-repeat;
+    width: 611px;
+    height: 550px;
+    top: -70px;
+    bottom: 0;
+    right: 0;
+    left: 474px;
+}
+
+.call-to-action-desq {
+    margin-top: 20px;
+    width: 383px;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.call-to-action-desq > span {
+    font-weight: 700;
+    color: #fff;
+}
+
+.email-not-required {
+    margin-top: 15px;
+}
+
+.email-not-required > span {
+	line-height: 1.71;
+	color: rgba(255, 255, 255, 0.8);
+	margin-left: 15px;
+}
+
+.btn-test-email-container {
+    margin-top: 45px;
+    width: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    margin-top: 150px;
+}
+
+.providers-title {
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #27DEBF;
+}
+
+.spam-checker-title {
+    margin-top: 25px;
+    width: 490px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #29375A;
+    margin-bottom: 30px;
+}
+
+.provider-item {
+    width: 164px;
+    height: 164px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.provider-item:hover {
+    box-shadow: 0px 2px 15px rgba(2, 71, 149, 0.5);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gmail_ico {
+    width: 90px;
+    height: 50px;
+}
+
+.salesforce_ico {
+    width: 86px;
+    height: 60px;
+}
+
+.hubspot_ico {
+    width: 120px;
+    height: 35px;
+}
+
+.mailchimp_ico {
+    width: 164px;
+    height: 80px;
+}
+
+.sendgrid_ico {
+    width: 130px;
+    height: 25px;
+}
+
+.outlook_ico {
+    width: 60px;
+    height: 60;
+}
+
+.providers-collection {
+    padding-bottom: 100px;
+    justify-content: space-between;
+    background-image: url('/img/ellipse2.svg');
+    background-size: 925px 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
