@@ -70,6 +70,10 @@ button {
 	top: 0;
 }
 
+.header_nav {
+    display: none;
+}
+
 .container {
 	max-width: 1084px;
 	padding: 0;
@@ -313,7 +317,7 @@ button {
     }
 
     .inner .container {
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
     .footer {
@@ -347,9 +351,114 @@ button {
     .call-to-action-title::after {
         display: none;
     }
+
+    .desktop_menu_nav {
+        display: none;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    /* Mobile menu */
+    .slicknav_menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .main-header-nav {
+        font-weight: 400;
+        margin-left: 0;
+    }
+
+    .main-header-nav a + a,
+    .info-header-nav a + a {
+        margin-left: 0;
+    }
+
+    .main-header-nav,
+    .info-header-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /* Mobile Query */
 @media (max-width: 425px) {
+    .inner .container {
+        padding-top: 10px;
+    }
+
+    .desktop_menu_nav {
+        display: none;
+    }
+
+    .header_nav {
+        display: none;
+    }
     
+    /* Mobile menu */
+    .slicknav_menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .main-header-nav {
+        font-weight: 400;
+        margin-left: 0;
+    }
+
+    .main-header-nav a + a,
+    .info-header-nav a + a {
+        margin-left: 0;
+    }
+
+    .main-header-nav,
+    .info-header-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .call-to-action-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+
+    .inner {
+        padding-bottom: 95px;
+    }
+
+    .spam-checker-title {
+        font-size: 26px;
+    }
+
+    .call-to-action-desq {
+        width: unset;
+        max-width: 383px;
+    }
+
+    .provider-item {
+        width: 124px;
+        height: 124px;
+    }
+
+    .spam-checker-title {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .providers-collection {
+        padding-bottom: 10px;
+    }
+
+    .slicknav_nav {
+        z-index: 1;
+    }
+
+    .inner .container {
+        margin: 0 15px;
+    }
 }
