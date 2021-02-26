@@ -1,6 +1,6 @@
-*, *::after, *::before {
+/* *, *::after, *::before {
     outline: 1px solid black;
-}
+} */
 
 * {
 	box-sizing: border-box;
@@ -234,7 +234,7 @@ button {
     background-position: top right;
 }
 
-/* Tablet Query */
+/* Laptop Query */
 @media (max-width: 1086px) {
     .container {
         margin-left: 50px;
@@ -251,12 +251,13 @@ button {
         left: 474px;
     }
 
-    .providers-collection {
-        flex-wrap: wrap;
+    .provider-item {
+        width: 144px;
+        height: 144px;
     }
 }
 
-/* Tablet Query */
+/* Laptop Query */
 @media (max-width: 1036px) {
     .call-to-action-title::after {
         background-size: contain;
@@ -267,23 +268,88 @@ button {
         right: 0;
         left: 474px;
     }
+
+    .provider-item {
+        width: 124px;
+        height: 124px;
+    }
 }
 
 /* Tablet Query */
 @media (max-width: 935px) {
     .call-to-action-title::after {
-        display: none;
+        background-size: contain;
+        width: 311px;
+        height: 250px;
+        top: 74px;
+        bottom: 0;
+        right: 0;
+        left: 367px;
     }
-}
 
-@media (max-width: 935px) {
     .container {
         margin-left: 25px;
         margin-right: 25px;
     }
 
-    .provider-item {
-        width: 224px;
-        height: 224px;
+    .call-to-action-title {
+        width: unset;
+        max-width: 542px;
     }
+
+    .spam-checker-title {
+        width: unset;
+        max-width: 490px;
+    }
+
+    .call-to-action-title {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 48px;
+    }
+
+    .spam-checker-title {
+        font-size: 34px;
+    }
+
+    .inner .container {
+        padding-top: 50px;
+    }
+
+    .footer {
+        margin-top: 80px;
+    }
+
+    .providers-collection {
+        padding-bottom: 25px;
+    }
+}
+
+/* Tablet Query */
+@media (max-width: 800px) {
+    .providers-collection {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .provider-item {
+        width: 194px;
+        height: 84px;
+    }
+
+    .spam-checker-title {
+        font-size: 30px;
+    }
+}
+
+/* Tablet Query */
+@media (max-width: 703px) {
+    .call-to-action-title::after {
+        display: none;
+    }
+}
+
+/* Mobile Query */
+@media (max-width: 425px) {
+    
 }
