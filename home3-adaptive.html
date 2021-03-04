@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- SlickNav -->
     <link rel="stylesheet" href="css/slicknav.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/home3-adaptive.css"/>
     <title>Mail Genius Home 3 - Adaptive</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-aos="slide-down">
         <div class="container d-flex align-items-center">
             <a href="#" class="logo">
                 <img src="./img/logo.png" alt="logo" />
@@ -42,10 +45,10 @@
     <main class="main">
         <section class="inner">
             <div class="container">
-                <h1 class="call-to-action-title" id="call-to-action-title">Send emails that don't end up in the spam folder</h1>
-                <p class="call-to-action-desq">Find out if your email is likely to trigger spam filters. Run a <span>free</span> email spam and security test in <span>less than one minute</span>.</p>
-                <div class="btn-test-email-container">
-                    <button class="btn-test-email btn btn-default">Test your email for free</button>
+                <h1 class="call-to-action-title" id="call-to-action-title" data-aos="fade-in">Send emails that don't end up in the spam folder</h1>
+                <p class="call-to-action-desq" data-aos="fade-in">Find out if your email is likely to trigger spam filters. Run a <span>free</span> email spam and security test in <span>less than one minute</span>.</p>
+                <div class="btn-test-email-container" data-aos="zoom-in-up" data-aos-delay="350">
+                    <button class="btn-test-email btn btn-default hvr-push">Test your email for free</button>
                     <div class="email-not-required d-flex align-it-center justify-content-center">
                         <svg
                             width="14"
@@ -73,25 +76,25 @@
     <footer>
         <div class="footer">
             <div class="container">
-                <h3 class="providers-title">Email Providers</h3>
-                <h2 class="spam-checker-title">Our free email spam checker works with every email provider</h2>
+                <h3 class="providers-title" data-aos="fade-in" data-aos-duration="200">Email Providers</h3>
+                <h2 class="spam-checker-title" data-aos="fade-in" data-aos-duration="200">Our free email spam checker works with every email provider</h2>
                 <div class="providers-collection d-flex">
-                    <div class="provider-item">
+                    <div class="provider-item hvr-glow" data-aos="flip-up" data-aos-delay="100">
                         <img class="gmail_ico" src="./img/gmail-icon.svg" alt="gmail">
                     </div>
-                    <div class="provider-item">
+                    <div class="provider-item hvr-glow" data-aos="flip-up" data-aos-delay="200">
                         <img class="salesforce_ico" src="./img/salesforce-icon.svg" alt="gmail">
                     </div>
-                    <div class="provider-item">
+                    <div class="provider-item hvr-glow" data-aos="flip-up" data-aos-delay="300">
                         <img class="hubspot_ico" src="./img/hubspot-icon.svg" alt="gmail">
                     </div>
-                    <div class="provider-item">
+                    <div class="provider-item hvr-glow" data-aos="flip-up" data-aos-delay="400">
                         <img class="mailchimp_ico" src="./img/mailchimp-icon.svg" alt="gmail">
                     </div>
-                    <div class="provider-item">
+                    <div class="provider-item hvr-glow" data-aos="flip-up" data-aos-delay="500">
                         <img class="sendgrid_ico" src="./img/sendgrid-icon.svg" alt="gmail">
                     </div>
-                    <div class="provider-item">
+                    <div class="provider-item hvr-glow" data-aos="flip-up" data-aos-delay="600">
                         <img class="outlook_ico" src="./img/outlook-icon.svg" alt="gmail">
                     </div>
                     <!-- /.provider-item -->
@@ -102,6 +105,11 @@
         </div>
         <!-- /.footer -->
     </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- jQuery -->
     <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -117,7 +125,7 @@
                 beforeOpen: function(trigger){
                     document.getElementById("call-to-action-title").style.paddingTop = "110px";
                 },
-                afterClose: function(trigger){
+                beforeClose: function(trigger){
                     document.getElementById("call-to-action-title").style.paddingTop = "10px";
                 }
                 
